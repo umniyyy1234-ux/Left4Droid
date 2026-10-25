@@ -1,0 +1,5 @@
+# Путь к Android SDK
+sdk.dir=/c/Users/shuric/AppData/Local/Android/Sdk
+
+# Или для Linux/Mac:
+# sdk.dir=/home/user/Android/Sdk

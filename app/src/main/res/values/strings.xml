@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">L4D2 Launcher</string>
+  <string name="onboarding_title_1">Welcome</string>
+  <string name="onboarding_desc_1">Run Left 4 Dead 2 on Android via Wine/Proton layer</string>
+  <string name="onboarding_title_2">Steam Login</string>
+  <string name="onboarding_desc_2">Enter your Steam credentials to download the game legally</string>
+  <string name="onboarding_title_3">Launch Ready</string>
+  <string name="onboarding_desc_3">One click to start playing!</string>
+  <string name="next">Next</string>
+  <string name="start">Start</string>
+  <string name="login">Login</string>
+  <string name="skip">Skip</string>
+  <string name="download">Download</string>
+</resources>

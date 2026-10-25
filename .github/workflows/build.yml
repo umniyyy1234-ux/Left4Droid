@@ -1,0 +1,40 @@
+name: Build L4D2 Launcher APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+      with:
+        api-level: 34
+        build-tools: 34.0.0
+        ndk: 26.1.10909125
+    
+    - name: Build APK
+      run: ./gradlew assembleRelease --no-daemon
+    
+    - name: Archive APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-release.apk
+        path: app/build/outputs/apk/release/app-release.apk
+    
+    - name: Show Build Output
+      run: |
+        find app/build/outputs/apk/release/ -name "*.apk" -exec ls -lh {} \;

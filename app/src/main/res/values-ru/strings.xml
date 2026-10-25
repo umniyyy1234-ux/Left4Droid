@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">L4D2 Лаунчер</string>
+  <string name="onboarding_title_1">Добро пожаловать</string>
+  <string name="onboarding_desc_1">Запуск Left 4 Dead 2 на Android через слой совместимости Wine/Proton</string>
+  <string name="onboarding_title_2">Вход через Steam</string>
+  <string name="onboarding_desc_2">Введите свои данные Steam для загрузки игры законным способом</string>
+  <string name="onboarding_title_3">Готово к запуску</string>
+  <string name="onboarding_desc_3">Одним кликом начните играть!</string>
+  <string name="next">Далее</string>
+  <string name="start">Начать</string>
+  <string name="login">Войти</string>
+  <string name="skip">Пропустить</string>
+  <string name="download">Скачать</string>
+</resources>
